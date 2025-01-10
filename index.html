@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title></title>
+    <title>watch</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -12,85 +12,75 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container">
-        <nav class="menu-nav">
-          <ul class="menu-nav-list">
-            <li class="menu-nav-item"><a href="#" class="nav-link"></a></li>
-            <li class="menu-nav-item"><a href="#" class="nav-link"></a></li>
-            <li class="menu-nav-item"><a href="#" class="nav-link"></a></li>
-            <li class="menu-nav-item"><a href="#" class="nav-link"></a></li>
-            <li class="menu-nav-item"><a href="#" class="nav-link"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <main>
       <section class="contact-us">
         <div class="container">
           <h2 class="contact-us-title">Contact Us</h2>
           <!--form-input -->
-          <div class="block-input-container">
-            <p class="contact-dscr">
-              Please use the form below to contact us. Enter your name, email,
-              phone, and message and we'll get back to you shortly.
-            </p>
-            <form class="leave-form">
-              <div class="input-container">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="username"
-                  id="name"
-                  required
-                />
-                <label class="form-label" for="name">Name</label>
-              </div>
-              <div class="input-container">
-                <input
-                  class="form-input"
-                  type="email"
-                  name="mail"
-                  id="email"
-                  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
-                  required
-                />
-                <label class="form-label" for="email">Email</label>
-              </div>
-              <div class="input-container">
-                <input
-                  class="form-input"
-                  type="text"
-                  name="tel"
-                  id="phone"
-                  pattern="^\+\d{3}-\d{2}-\d{3}-\d{2}-\d{2}$"
-                  placeholder="+380-XX-XXX-XX-XX"
-                  required
-                />
-                <label class="form-label" for="phone">Phone</label>
-              </div>
-              <div class="input-container">
-                <textarea
-                  class="form-text"
-                  name="description"
-                  id="comment"
-                ></textarea>
-                <label class="form-label" for="comment">Comment</label>
-              </div>
-            </form>
-            <button type="submit" class="send-btn">Send</button>
-          </div>
-          <div class="block-img">
-            <img src="./images/wach.jpg" alt="watch" />
+          <div class="block-contact">
+            <div class="block-input-container">
+              <p class="contact-dscr">
+                Please use the form below to contact us. Enter your name, email,
+                phone, and message and we'll get back to you shortly.
+              </p>
+              <form class="leave-form">
+                <div class="input-container">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="username"
+                    id="name"
+                    required
+                  />
+                  <label class="form-label" for="name">Name</label>
+                </div>
+                <div class="input-container">
+                  <input
+                    class="form-input"
+                    type="email"
+                    name="mail"
+                    id="email"
+                    pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+                    required
+                  />
+                  <label class="form-label" for="email">Email</label>
+                </div>
+                <div class="input-container">
+                  <input
+                    class="form-input"
+                    type="text"
+                    name="tel"
+                    id="phone"
+                    pattern="\+38\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}"
+                    placeholder="+380-XX-XXX-XX-XX"
+                    required
+                  />
+                  <label class="form-label" for="phone">Phone</label>
+                </div>
+                <div class="input-container">
+                  <textarea
+                    class="form-text"
+                    name="description"
+                    id="comment"
+                  ></textarea>
+                  <label class="form-label" for="comment">Comment</label>
+                </div>
+              </form>
+              <button type="submit" class="send-btn">Send</button>
+            </div>
+            <div class="block-img">
+              <img
+                src="./images/img-watch-x1.webp"
+                srcset="
+                  ./images/img-watch-x2@2x.webp 2x,
+                  ./images/img-watch-x3@3x.webp 3x
+                "
+                alt="watch"
+              />
+            </div>
           </div>
         </div>
       </section>
-      <section class=""></section>
-      <section class=""></section>
     </main>
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-    <script src=""></script>
   </body>
 </html>

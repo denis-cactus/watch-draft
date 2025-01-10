@@ -38,8 +38,7 @@ ul {
   padding: 0 20px;
   margin: 0 auto;
 }
-/* .contact-us {
-} */
+
 .contact-us-title {
   font-family: var(--font-family);
   font-weight: 600;
@@ -48,6 +47,10 @@ ul {
   letter-spacing: -0.02em;
   color: #0c0c0c;
   margin-bottom: 24px;
+}
+.block-contact {
+  display: flex;
+  flex-wrap: wrap;
 }
 .block-input-container {
   padding: 48px 28px;
@@ -104,7 +107,7 @@ ul {
   height: 104px;
   outline: none;
   width: 100%;
-  padding: 0 20px;
+  padding: 20px 20px;
   background: transparent;
   color: var(--main);
   border: 1px solid rgba(18, 20, 23, 0.1);
@@ -112,6 +115,7 @@ ul {
   transition: 250ms ease-in-out;
 }
 .send-btn {
+  font-family: inherit;
   border-radius: 16px;
   padding: 12px 50px;
   width: 134px;
@@ -138,4 +142,50 @@ ul {
 .form-input::placeholder {
   opacity: 0;
   transition: opacity 0.3s ease;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 832px;
+    padding: 0 20px;
+  }
+  .contact-us-title {
+    font-size: 48px;
+  }
+  .contact-dscr {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+  .block-input-container {
+    padding: 50px 122px;
+  }
+  .send-btn {
+    padding: 17px 63px;
+    width: 160px;
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1410px;
+    padding: 0 65px;
+  }
+  .block-contact {
+    flex-wrap: nowrap;
+  }
+
+  .block-input-container {
+    padding: 50px 60px;
+    margin-bottom: 0;
+    margin-right: 40px;
+  }
+  .block-img img {
+    height: 556px;
+  }
+  .send-btn {
+    transition: background 250ms ease-in-out;
+  }
+  .send-btn:hover,
+  .send-btn:focus {
+    background: #1f3cd4;
+  }
 }
